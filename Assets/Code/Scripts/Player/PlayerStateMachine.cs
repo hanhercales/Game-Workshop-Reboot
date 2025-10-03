@@ -58,33 +58,27 @@ public class PlayerStateMachine : MonoBehaviour
     {
         PlayerState highPriorityState = CheckHighPriorityState();
         if (highPriorityState != PlayerState.Idle) return highPriorityState;
-
-        if (!playerMovement.isGrounded) return GetAirborneState();
-        else return GetGroundedState();
+        return PlayerState.Idle;
     }
     
     private PlayerState CheckHighPriorityState()
     {
         if (playerMovement.isDead) return PlayerState.Death;
         if (playerMovement.isHurt) return PlayerState.Hurt;
-        return PlayerState.Idle;
+        return playerMovement.isGrounded ? GetGroundedState() : GetAirborneState();
     }
     
     private PlayerState GetAirborneState()
     {
         if (playerMovement.isShooting) return PlayerState.JumpShoot;
-        else
-        {
-            if(playerMovement.isFalling) return PlayerState.Fall;
-            return PlayerState.Jump;
-        }
+        return playerMovement.isFalling ? PlayerState.Fall : PlayerState.Jump;
     }
     
     private PlayerState GetGroundedState()
     {
-        if (playerMovement.isMoving) return PlayerState.Run;
-        if (playerMovement.isShooting) return PlayerState.Shoot;
         if (playerMovement.isAttacking) return PlayerState.Attack;
+        if (playerMovement.isShooting) return PlayerState.Shoot;
+        if (playerMovement.isMoving) return PlayerState.Run;
         return PlayerState.Idle;
     }
     

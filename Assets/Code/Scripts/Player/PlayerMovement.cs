@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         isAttacking = Input.GetKey(KeyCode.J);
         isShooting = Input.GetKey(KeyCode.K);
         
-        if (!isGrounded && rb.velocity.y < 0 && Input.GetKey(KeyCode.LeftShift))
+        if (!isGrounded && rb.velocity.y < 0)
         {
             isFalling = true;
         }
