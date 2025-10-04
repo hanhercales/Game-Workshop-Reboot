@@ -18,7 +18,7 @@ public class PlayerStateMachine : MonoBehaviour
     }
     public PlayerState currentState;
     public Animator animator;
-    public Dictionary<PlayerState, string> animatorStates;
+    private Dictionary<PlayerState, string> animatorStates;
     private PlayerMovement playerMovement;
 
     private void Awake()
@@ -54,7 +54,7 @@ public class PlayerStateMachine : MonoBehaviour
         }
     }
 
-    public PlayerState GetNextState()
+    private PlayerState GetNextState()
     {
         PlayerState highPriorityState = CheckHighPriorityState();
         if (highPriorityState != PlayerState.Idle) return highPriorityState;
@@ -82,7 +82,7 @@ public class PlayerStateMachine : MonoBehaviour
         return PlayerState.Idle;
     }
     
-    public void ChangeState(PlayerState newState)
+    private void ChangeState(PlayerState newState)
     {
         if(currentState == newState) return;
 
@@ -96,5 +96,13 @@ public class PlayerStateMachine : MonoBehaviour
             Debug.LogError("State animation not found");
         }
     }
-    
+
+    public void EndAttackState()
+    {
+        if(playerMovement.isAttacking || playerMovement.isShooting)
+        {
+            playerMovement.isAttacking = false;
+            playerMovement.isShooting = false;
+        }
+    }
 }

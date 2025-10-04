@@ -40,9 +40,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
-        
-        isAttacking = Input.GetKey(KeyCode.J);
-        isShooting = Input.GetKey(KeyCode.K);
+        if(Input.GetKeyDown(KeyCode.J))
+            isAttacking = true;
+        if(Input.GetKeyDown(KeyCode.K))
+            isShooting = true;
         
         if (!isGrounded && rb.velocity.y < 0)
         {
@@ -67,12 +68,7 @@ public class PlayerMovement : MonoBehaviour
         Flip();
     }
     
-    public void SetHorizontalMovement(float input)
-    {
-        horizontalInput = input;
-    }
-    
-    public void Jump()
+    private void Jump()
     {
         if (!isGrounded) return;
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
