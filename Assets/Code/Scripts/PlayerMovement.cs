@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance = 0.2f;
+    //private PlayerStateMachine playerStateMachine;
 
     // Directional variables
     private float horizontalInput;
@@ -42,6 +43,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+        }
+        
+        if (!isGrounded && rb.velocity.y < 0)
+        {
+            isFalling = true;
+        }
+        else
+        {
+            isFalling = false;
         }
 
         if (Input.GetKeyDown(KeyCode.J)) isAttacking = true;
