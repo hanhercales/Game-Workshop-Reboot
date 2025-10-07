@@ -74,8 +74,8 @@ public class PlayerStateMachine : MonoBehaviour
 
     private PlayerState CheckHighPriorityState()
     {
-        if (playerMovement.isDead) return PlayerState.Death;
-        if (playerMovement.isHurt) return PlayerState.Hurt;
+        if (playerMovement.playerHealth.isDead) return PlayerState.Death;
+        if (playerMovement.playerHealth.isHurt) return PlayerState.Hurt;
         return playerMovement.isGrounded ? GetGroundedState() : GetAirborneState();
     }
 

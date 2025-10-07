@@ -6,82 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c255cfcb-107e-43bf-824b-49ddd758ac4f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game-Workshop-Reboot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game-Workshop-Reboot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Attack.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Attack.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Cat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Cat.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Cat.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Cat.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Death.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Death.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Fall.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Fall.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Hurt.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Hurt.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Jump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/JumpShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/JumpShoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/JumpShoot.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/JumpShoot.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Run.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Run.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Shoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Shoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Shoot.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Cat/Shoot.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Material.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Material.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_10_Alternative_Colour_Cat_Roll-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_10_Alternative_Colour_Cat_Roll-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_11_Alternative_Colour_Cat_Long_Roll-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_11_Alternative_Colour_Cat_Long_Roll-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_12_Alternative_Colour_Cat_Spin-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_12_Alternative_Colour_Cat_Spin-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_13_Alternative_Colour_Cat_Double_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_13_Alternative_Colour_Cat_Double_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_14_Alternative_Colour_Cat_Long_Double_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_14_Alternative_Colour_Cat_Long_Double_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_15_Alternative_Colour_Cat_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_15_Alternative_Colour_Cat_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_16_Alternative_Colour_Cat_Jump_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_16_Alternative_Colour_Cat_Jump_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_17_Alternative_Colour_Cat_Take_Damage-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_17_Alternative_Colour_Cat_Take_Damage-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_18_Alternative_Colour_Cat_Death-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_18_Alternative_Colour_Cat_Death-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_19_Alternative_Colour_Cat_Push-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_19_Alternative_Colour_Cat_Push-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_1_Alternative_Colour_Cat_Idle-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_1_Alternative_Colour_Cat_Idle-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_20_Alternative_Colour_Cat_Pull-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_20_Alternative_Colour_Cat_Pull-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_21_Alternative_Colour_Cat_Ranged_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_21_Alternative_Colour_Cat_Ranged_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_22_Alternative_Colour_Cat_Jump_Ranged_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_22_Alternative_Colour_Cat_Jump_Ranged_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_23_Alternative_Colour_Cat_Attack_2_Hits-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_23_Alternative_Colour_Cat_Attack_2_Hits-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_24_Alternative_Colour_Cat_Special_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_24_Alternative_Colour_Cat_Special_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_2_Alternative_Colour_Cat_Run-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_2_Alternative_Colour_Cat_Run-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_3_Alternative_Colour_Cat_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_3_Alternative_Colour_Cat_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_4_Alternative_Colour_Cat_Fall-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_4_Alternative_Colour_Cat_Fall-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_5_Alternative_Colour_Cat_Wall_Slide-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_5_Alternative_Colour_Cat_Wall_Slide-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_6_Alternative_Colour_Cat_Dash-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_6_Alternative_Colour_Cat_Dash-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_7_Alternative_Colour_Cat_Ledge_Grab_Land-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_7_Alternative_Colour_Cat_Ledge_Grab_Land-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_8_Alternative_Colour_Cat_Ledge_Grab_Idle-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_8_Alternative_Colour_Cat_Ledge_Grab_Idle-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_9_Alternative_Colour_Cat_Climb_Ladder-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/AlternativeColour/Outlined_9_Alternative_Colour_Cat_Climb_Ladder-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_10_Cat_Roll-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_10_Cat_Roll-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_11_Cat_Long_Roll-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_11_Cat_Long_Roll-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_12_Cat_Spin-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_12_Cat_Spin-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_13_Cat_Double_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_13_Cat_Double_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_14_Cat_Long_Double_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_14_Cat_Long_Double_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_15_Cat_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_15_Cat_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_16_Cat_Jump_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_16_Cat_Jump_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_17_Cat_Take_Damage-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_17_Cat_Take_Damage-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_18_Cat_Death-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_18_Cat_Death-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_19_Cat_Push-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_19_Cat_Push-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_1_Cat_Idle-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_1_Cat_Idle-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_20_Cat_Pull-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_20_Cat_Pull-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_21_Cat_Ranged_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_21_Cat_Ranged_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_22_Cat_Jump_Ranged_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_22_Cat_Jump_Ranged_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_23_Cat_Attack_2_Hits-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_23_Cat_Attack_2_Hits-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_24_Cat_Special_Attack-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_24_Cat_Special_Attack-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_2_Cat_Run-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_2_Cat_Run-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_3_Cat_Jump-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_3_Cat_Jump-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_4_Cat_Fall-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_4_Cat_Fall-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_5_Cat_Wall_Slide-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_5_Cat_Wall_Slide-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_6_Cat_Dash-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_6_Cat_Dash-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_7_Cat_Ledge_Grab_Land-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_7_Cat_Ledge_Grab_Land-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_8_Cat_Ledge_Grab_Idle-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_8_Cat_Ledge_Grab_Idle-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_9_Cat_Climb_Ladder-Sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprite/Cat/Outlined_9_Cat_Climb_Ladder-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/PlayerStateMachine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/PlayerStateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Slime/Slime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Slime/Slime.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +29,9 @@
     &quot;accountId&quot;: &quot;041c89e9-6525-4ccd-ac0f-04c7e33ab671&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -190,7 +119,7 @@
       <workItem from="1759415273435" duration="3101000" />
       <workItem from="1759549914547" duration="5002000" />
       <workItem from="1759672205321" duration="2519000" />
-      <workItem from="1759847774727" duration="1944000" />
+      <workItem from="1759847774727" duration="4625000" />
     </task>
     <servers />
   </component>
