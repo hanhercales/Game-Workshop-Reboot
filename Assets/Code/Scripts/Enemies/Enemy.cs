@@ -53,8 +53,10 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log(gameObject.name + " hit " + damageToPlayer + "damage to player.");
-            //Insert method to give player damage
+            Debug.Log(gameObject.name + " hit " + damageToPlayer + " damage to player.");
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            
+            if (playerHealth != null) playerHealth.TakeDamage(damageToPlayer);
         }
             
     }

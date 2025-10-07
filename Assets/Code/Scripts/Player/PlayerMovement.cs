@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance = 0.2f;
     //private PlayerStateMachine playerStateMachine;
+    private PlayerHealth playerHealth;
 
     // Directional variables
     private float horizontalInput;
@@ -19,8 +20,6 @@ public class PlayerMovement : MonoBehaviour
     // True/false checks
     public bool isGrounded;
     public bool isMoving;
-    public bool isDead;
-    public bool isHurt;
     public bool isAttacking;
     public bool isShooting;
     public bool isFalling;
@@ -33,11 +32,13 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerHealth = GetComponent<PlayerHealth>();
         originalGravityScale = rb.gravityScale;
     }
     
     private void Update()
     {
+        if (playerHealth.isDead) return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         
         if (Input.GetKeyDown(KeyCode.Space))
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip() // check
     {
-        if (isDead || isHurt) return;
+        if (playerHealth.isDead || playerHealth.isHurt) return;
 
         if ((isFacingRight && horizontalInput < 0) || (!isFacingRight && horizontalInput > 0))
         {

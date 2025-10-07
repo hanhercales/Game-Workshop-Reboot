@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765234769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 1075079495}
   - component: {fileID: 1075079493}
   - component: {fileID: 1075079492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 6
 --- !u!1 &1423780513
 GameObject:
@@ -801,9 +801,10 @@ GameObject:
   - component: {fileID: 1423780518}
   - component: {fileID: 1423780517}
   - component: {fileID: 1423780520}
+  - component: {fileID: 1423780521}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -922,8 +923,6 @@ MonoBehaviour:
   groundCheckDistance: 0.2
   isGrounded: 0
   isMoving: 0
-  isDead: 0
-  isHurt: 0
   isAttacking: 0
   isShooting: 0
   isFalling: 0
@@ -999,7 +998,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1423780520
 MonoBehaviour:
@@ -1013,6 +1012,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b42337477657fdf41a64d8f5aa1dba26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1423780521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423780513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17d39ddd5ff95641971f0b34beeccc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  invincibilityDuration: 1
+  flashInterval: 0.1
 --- !u!1 &2037348155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1165,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
-  - {fileID: 1423780516}
   - {fileID: 2037348158}
   - {fileID: 384301004}
+  - {fileID: 1423780516}
   - {fileID: 1075079491}

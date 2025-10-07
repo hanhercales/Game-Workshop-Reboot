@@ -25,11 +25,13 @@ public class PlayerStateMachine : MonoBehaviour
     private Animator animator;
     
     private PlayerMovement playerMovement;
+    private PlayerHealth playerHealth;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Start()
@@ -74,8 +76,8 @@ public class PlayerStateMachine : MonoBehaviour
 
     private PlayerState CheckHighPriorityState()
     {
-        if (playerMovement.isDead) return PlayerState.Death;
-        if (playerMovement.isHurt) return PlayerState.Hurt;
+        if (playerHealth.isDead) return PlayerState.Death;
+        if (playerHealth.isHurt) return PlayerState.Hurt;
         return playerMovement.isGrounded ? GetGroundedState() : GetAirborneState();
     }
 
