@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,23 +7,28 @@ public class PlayerStateMachine : MonoBehaviour
 {
     public enum PlayerState
     {
-        Attack,
-        Death,
+        Idle,
+        Run,
+        Jump,
         Fall,
         Hurt,
-        Idle,
-        Jump,
-        Run,
+        Death,
         Shoot,
-        JumpShoot
+        JumpShoot,
+        Attack
     }
-    public PlayerState currentState;
-    public Animator animator;
-    private Dictionary<PlayerState, string> animatorStates;
+    
+    private PlayerState currentState;
+    
+    private Dictionary<PlayerState, string> animatorStates = new Dictionary<PlayerState, string>();
+    
+    private Animator animator;
+    
     private PlayerMovement playerMovement;
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -44,36 +50,35 @@ public class PlayerStateMachine : MonoBehaviour
         ChangeState(PlayerState.Idle);
     }
 
+    private void ChangeState(PlayerState newState)
+    {
+        if (currentState == newState) return;
+        
+        currentState = newState;
+        animator.Play(animatorStates[currentState]);
+    }
+    
     private void Update()
     {
-        PlayerState newState = GetNextState();
-
-        if (currentState != newState)
-        {
-            ChangeState(newState);
-        }
+        PlayerState newState = GetNexState();
+        
+        if(newState != currentState) ChangeState(newState);
     }
 
-    private PlayerState GetNextState()
+    private PlayerState GetNexState()
     {
         PlayerState highPriorityState = CheckHighPriorityState();
         if (highPriorityState != PlayerState.Idle) return highPriorityState;
         return PlayerState.Idle;
     }
-    
+
     private PlayerState CheckHighPriorityState()
     {
         if (playerMovement.isDead) return PlayerState.Death;
         if (playerMovement.isHurt) return PlayerState.Hurt;
         return playerMovement.isGrounded ? GetGroundedState() : GetAirborneState();
     }
-    
-    private PlayerState GetAirborneState()
-    {
-        if (playerMovement.isShooting) return PlayerState.JumpShoot;
-        return playerMovement.isFalling ? PlayerState.Fall : PlayerState.Jump;
-    }
-    
+
     private PlayerState GetGroundedState()
     {
         if (playerMovement.isAttacking) return PlayerState.Attack;
@@ -81,22 +86,13 @@ public class PlayerStateMachine : MonoBehaviour
         if (playerMovement.isMoving) return PlayerState.Run;
         return PlayerState.Idle;
     }
-    
-    private void ChangeState(PlayerState newState)
+
+    private PlayerState GetAirborneState()
     {
-        if(currentState == newState) return;
-
-        currentState = newState;
-        if (animatorStates.ContainsKey(newState))
-        {
-            animator.Play(animatorStates[newState]);
-        }
-        else
-        {
-            Debug.LogError("State animation not found");
-        }
+        if (playerMovement.isShooting) return PlayerState.JumpShoot;
+        return playerMovement.isFalling ? PlayerState.Fall : PlayerState.Jump;
     }
-
+    
     public void EndAttackState()
     {
         if(playerMovement.isAttacking || playerMovement.isShooting)
