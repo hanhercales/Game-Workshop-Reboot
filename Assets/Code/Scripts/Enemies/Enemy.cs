@@ -4,7 +4,7 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] protected int maxHealth;
-    protected int currentHealth;
+    [SerializeField] protected int currentHealth;
     [SerializeField] protected int damageToPlayer;
     
     public bool isDead { get; protected set; }
