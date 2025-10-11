@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c255cfcb-107e-43bf-824b-49ddd758ac4f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Game-Workshop-Reboot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Game-Workshop-Reboot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Slime/Slime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Scripts/Enemies/Slime/Slime.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1759415273435" duration="3101000" />
       <workItem from="1759549914547" duration="5002000" />
       <workItem from="1759672205321" duration="2519000" />
-      <workItem from="1759847774727" duration="4625000" />
+      <workItem from="1759847774727" duration="6047000" />
     </task>
     <servers />
   </component>
