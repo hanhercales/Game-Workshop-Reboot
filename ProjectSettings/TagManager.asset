@@ -43,3 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Farthest
+    uniqueID: 2774773559
+    locked: 0
+  - name: Mid
+    uniqueID: 2959588709
+    locked: 0
+  - name: Closest
+    uniqueID: 2877827025
+    locked: 0
+  - name: Foreground
+    uniqueID: 2841071263
+    locked: 0
