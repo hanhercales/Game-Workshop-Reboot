@@ -54,8 +54,16 @@ public class PlayerMovement : MonoBehaviour
             isFalling = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.J)) isAttacking = true;
-        if (Input.GetKeyDown(KeyCode.K)) isShooting = true;
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            AudioManager.Instance.RunAttackFx();
+            isAttacking = true;
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            AudioManager.Instance.RunAttackFx();
+            isShooting = true;
+        }
         IsFastFalling();
         
         CheckIfGrounded();
@@ -95,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
         if (!isGrounded) return;
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         isGrounded = false;
+        AudioManager.Instance.RunJumpFx();
     }
 
     private void CheckIfGrounded()

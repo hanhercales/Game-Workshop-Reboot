@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 5;
-    private int currentHealth;
+    [SerializeField] private int currentHealth;
+    
+    //hpPanel to display
+    [SerializeField] private GameObject healthPanel;
     
     public bool isDead { get; private set; }
     public bool isHurt { get; private set; }
@@ -22,12 +25,31 @@ public class PlayerHealth : MonoBehaviour
         isHurt = false;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+    
+    public void UpdateHealthIcons()
+    {
+        if (healthPanel.transform.childCount < currentHealth)
+        {
+            Debug.Log("HP > Max HP");
+            return;
+        }
+        
+        for (int i = 0; i < currentHealth; i++)
+        {
+            healthPanel.transform.GetChild(i).gameObject.SetActive(true);
+        }
+
+        for (int i = (int)currentHealth; i < maxHealth; i++)
+        {
+            healthPanel.transform.GetChild(i).gameObject.SetActive(false);
+        }
+    }
 
     public void TakeDamage(int damageAmount)
     {
         if (isDead || isHurt) return;
         currentHealth -= damageAmount;
-        Debug.Log("Player hit! Current health: " + currentHealth);
+        // Debug.Log("Player hit! Current health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -35,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            UpdateHealthIcons();
             StartCoroutine(InvincibilityRoutine());
         }
     }
